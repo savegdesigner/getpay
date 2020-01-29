@@ -1,0 +1,31 @@
+// Application Color palette
+@import './palette.scss';
+
+// Buttons
+.primary-button{
+    padding: 8px 28px;
+    border: 1px solid $secondary-color;
+    border-radius: 2px;
+    transition: 200ms ease-in;
+
+    &:hover{
+        background-color: $secondary-color;
+        color: $primary-color;
+    }
+}
+
+.secondary-button{
+    display: inline-block;
+    margin: 20px 0px;
+    padding: 12px 32px;
+    border: 1px solid $secondary-color;
+    border-radius: 4px;
+    transition: 300ms ease-in-out;
+    background-color: $secondary-color;
+    box-shadow: 2px 5px 26px rgba(114, 46, 27, 0.253);
+
+    &:hover{
+        box-shadow: 2px 5px 26px rgba(114, 46, 27, 0.384);
+        transform: scale(1.02);
+    }
+}

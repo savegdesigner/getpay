@@ -1,0 +1,78 @@
+// Noto Sans - Google FOnt
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans:400,700&display=swap');
+// Application Color palette
+@import './palette.scss';
+// Basic CSS Reset
+@import './reset.scss';
+// Utilities
+@import './utils.scss';
+
+body{
+    background-color: $primary-color;
+    font-family: 'Noto Sans', sans-serif;
+
+    header{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px 120px;
+
+        nav{
+
+            ul{
+                display: flex;
+
+                li{
+                    margin-right: 40px;
+
+                    &:last-child{
+                        margin: 0;
+                    }
+
+                    a.link{
+                        color: $base-color;
+                        transition: 200ms ease-in;
+
+                        &:hover{
+                            color: $secondary-color;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    main{
+        width: 100%;
+        display: flex;
+        padding: 100px 160px;
+
+        .main-content{
+            width: 50%;
+
+            h1{
+                max-width: 700px;
+                margin-bottom: 20px;
+                font-size: 62px;
+                text-transform: uppercase;
+                letter-spacing: 3px;
+                color: $base-color;
+            }
+
+            p{
+                max-width: 650px;
+                margin-bottom: 30px;
+                font-size: 20px;
+                color: $base-color;
+            }
+        }
+
+        .image-content{
+            margin: 0 auto;
+
+            img{
+                width: 450px;
+            }
+        }
+    }
+}
