@@ -10,7 +10,6 @@
 
     &:hover{
         background-color: $secondary-color;
-        color: $primary-color;
     }
 }
 
@@ -29,3 +28,9 @@
         transform: scale(1.02);
     }
 }
+
+// Text Style
+$font-weight: (
+    "Regular": 400,
+    "Bold": 700
+)
