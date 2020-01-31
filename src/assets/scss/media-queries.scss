@@ -1,0 +1,210 @@
+// Application Color palette
+@import './palette.scss';
+
+
+@media (max-width: 1540px) {
+
+    body {
+
+        header {
+            padding: 20px 80px;
+        }
+
+        main {
+            padding: 190px 160px 140px 160px;
+        }
+
+    }
+
+}
+
+@media (max-width: 1280px) {
+
+    body {
+
+        header {
+            padding: 20px 40px;
+        }
+
+        main {
+            padding: 190px 80px;
+        }
+
+        #info-section {
+            padding: 120px 80px;
+        }
+    }
+
+}
+
+@media (max-width: 1100px) {
+
+    body {
+
+        main {
+
+            .main-content {
+                width: 100%;
+            }
+
+            .image-content {
+                display: none;
+            }
+        }
+
+    }
+
+}
+
+@media (max-width: 920px) {
+
+    body {
+
+        header {
+            // position: fixed;
+            // background-color: $primary-color;
+            // padding: 10px 40px;
+
+            nav {
+                width: 100%;
+                height: 100vh;
+                position: fixed;
+                top: 0;
+                left: 0;
+                transform: translateX(100%);
+                background-color: $secondary-color;
+
+                ul {
+                    text-align: center;
+                    width: 100%;
+                    height: 100%;
+                    justify-content: center;
+                    align-items: center;
+                    flex-flow: column;
+
+                    li {
+                        font-size: 20px;
+                        margin: 35px 0px !important;
+
+                        a:hover {
+                            color: $primary-color !important;
+                        }
+
+                    }
+                }
+            }
+
+            .menu-toggle {
+                display: block;
+                position: absolute;
+            }
+        }
+
+        main {
+            padding: 190px 80px;
+        }
+
+        #info-section {
+            padding: 80px;
+
+            .info-card {
+                margin: 70px;
+            }
+        }
+    }
+
+}
+
+@media (max-width: 700px) {
+
+    body {
+
+        header {
+            padding: 20px;
+        }
+
+        main {
+            padding: 190px 40px;
+
+            .main-content {
+
+                h1 {
+                    font-size: 46px;
+                }
+
+                p {
+                    font-size: 18px;
+                    max-width: 500px;
+                }
+
+            }
+        }
+
+        #info-section {
+            padding: 120px 40px;
+        }
+    }
+
+}
+
+@media (max-width: 610px) {
+
+    body {
+
+        main {
+
+            .main-content {
+
+                h1 {
+                    font-size: 36px;
+                    min-width: 0;
+                }
+            }
+        }
+
+        #info-section {
+            -webkit-box-orient: vertical;
+            -webkit-box-direction: normal;
+            -ms-flex-flow: column wrap;
+            flex-flow: column wrap;
+
+            .info-card {
+                margin: 70px 0px;
+            }
+        }
+    }
+
+}
+
+@media (max-width: 420px) {
+
+    body {
+
+        header {
+            padding: 20px 10px;
+
+        }
+
+        main {
+            padding: 160px 20px;
+
+            .main-content {
+
+                h1 {
+                    font-size: 28px;
+                    letter-spacing: 2px;
+                }
+
+                p {
+                    font-size: 16px;
+                }
+            }
+
+        }
+
+        #info-section {
+            padding: 40px 20px;
+        }
+    }
+
+}

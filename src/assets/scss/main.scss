@@ -2,38 +2,57 @@
 @import url('https://fonts.googleapis.com/css?family=Noto+Sans:400,700&display=swap');
 // Application Color palette
 @import './palette.scss';
-// Basic CSS Reset
-@import './reset.scss';
 // Utilities
 @import './utils.scss';
 
-body{
+
+body {
+    position: relative;
     background-color: $primary-color;
     font-family: 'Noto Sans', sans-serif;
 
-    header{
+    header {
+        width: 100%;
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        justify-content: space-between;
-        align-items: center;
         padding: 20px 120px;
+        -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+        justify-content: space-between;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        position: fixed;
+        background-color: $primary-color;
+        transition: 250ms ease-in-out;
 
-        nav{
+        #getpay-logo {
+            width: 80px;
+        }
 
-            ul{
+        nav {
+            transition: 250ms ease-in-out;
+
+            ul {
+                display: -webkit-box;
+                display: -ms-flexbox;
                 display: flex;
 
-                li{
+                li {
                     margin-right: 70px;
 
-                    &:last-child{
+                    &:last-child {
                         margin: 0;
                     }
 
-                    a.link{
+                    a.link {
                         color: $base-color;
+                        -webkit-transition: 200ms ease-in;
+                        -o-transition: 200ms ease-in;
                         transition: 200ms ease-in;
 
-                        &:hover{
+                        &:hover {
                             color: $secondary-color;
                         }
                     }
@@ -42,20 +61,32 @@ body{
         }
     }
 
-    main{
+    main {
         width: 100%;
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        padding: 100px 220px;
+        padding: 190px 220px 140px 220px;
 
-        .main-content{
+        .main-content {
             width: 50%;
+            display: -webkit-box;
+            display: -ms-flexbox;
             display: flex;
+            -webkit-box-pack: start;
+            -ms-flex-pack: start;
             justify-content: flex-start;
+            -webkit-box-align: start;
+            -ms-flex-align: start;
             align-items: flex-start;
+            -webkit-box-orient: vertical;
+            -webkit-box-direction: normal;
+            -ms-flex-flow: column;
             flex-flow: column;
 
-            h1{
+            h1 {
                 max-width: 700px;
+                min-width: 550px;
                 margin-bottom: 20px;
                 font-size: 62px;
                 text-transform: uppercase;
@@ -64,7 +95,7 @@ body{
                 font-weight: map-get($font-weight, Regular);
             }
 
-            p{
+            p {
                 max-width: 650px;
                 margin-bottom: 40px;
                 font-size: 20px;
@@ -72,47 +103,79 @@ body{
             }
         }
 
-        .image-content{
+        .image-content {
             width: 50%;
+            display: -webkit-box;
+            display: -ms-flexbox;
             display: flex;
+            -webkit-box-pack: end;
+            -ms-flex-pack: end;
             justify-content: flex-end;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
             align-items: center;
 
-            img{
+            img {
                 width: 450px;
             }
         }
     }
-    #info-section{
+
+    #info-section {
         width: 100%;
-        height: 450px;
+        padding: 120px 180px;
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        justify-content: center;
+        flex-wrap: wrap;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: space-around;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
         align-items: center;
         background-color: $secondary-color;
 
-        .info-card{
+        .info-card {
+            width: 15%;
+            height: 100%;
+            display: -webkit-box;
+            display: -ms-flexbox;
             display: flex;
+            -webkit-box-pack: center;
+            -ms-flex-pack: center;
             justify-content: center;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
             align-items: center;
+            -webkit-box-orient: vertical;
+            -webkit-box-direction: normal;
+            -ms-flex-flow: column;
             flex-flow: column;
-            margin: 0px 80px;
+            margin: 40px 80px;
+            text-align: center;
 
-            .icon{
+            .icon {
                 width: 140px;
                 height: 140px;
+                display: -webkit-box;
+                display: -ms-flexbox;
                 display: flex;
+                -webkit-box-pack: center;
+                -ms-flex-pack: center;
                 justify-content: center;
+                -webkit-box-align: center;
+                -ms-flex-align: center;
                 align-items: center;
                 border-radius: 50%;
                 background-color: $base-color;
 
-                img{
+                img {
                     width: 70px;
                 }
             }
 
-            p{
+            p {
                 margin-top: 40px;
                 width: 220px;
                 color: $base-color;
@@ -120,7 +183,7 @@ body{
                 font-size: 18px;
             }
 
-            span{
+            span {
                 color: $primary-color;
                 font-weight: map-get($font-weight, "Bold");
             }
